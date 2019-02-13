@@ -1,0 +1,43 @@
+.space {
+    width:200px;
+    height: 100vw;
+    background-color: yellow;
+    transition: transform 1s ease 0.2s, background-color 1s;
+}
+
+.flex-center {
+    display:flex;
+    justify-content: center;
+}
+
+#myDiv {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: transform 1s ease 0.2s, background-color 1s;
+}
+
+.visited {
+    transform: translateX(200px);
+    background-color: black;
+}
+
+/* @keyframes fadeInLeft {
+    0% { 
+        opacity: 0; 
+        transform: translateX(-400px); 
+    }
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+} */
+
+/* .fadeInLeft{ 
+    opacity: 0; 
+    -webkit-transform: translateX(-400px); 
+    transform: translateX(-400px);
+} */
