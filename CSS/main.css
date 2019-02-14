@@ -2,7 +2,7 @@
     width:200px;
     height: 100vw;
     background-color: yellow;
-    transition: transform 1s ease 0.2s, background-color 1s;
+    /* transition: transform 1s ease 0.2s */
 }
 
 .flex-center {
@@ -11,33 +11,30 @@
 }
 
 #myDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;
     background-color: red;
-    transition: transform 1s ease 0.2s, background-color 1s;
+    /* transition: transform 1s ease 0.2s */
 }
 
 .visited {
-    transform: translateX(200px);
-    background-color: black;
+    animation: fadeInLeft 2s ease-in 1 normal 0s;
+    /* transform: translateX(200px); */
 }
 
-/* @keyframes fadeInLeft {
+@keyframes fadeInLeft {
     0% { 
         opacity: 0; 
-        transform: translateX(-400px); 
+        transform: translateX(-300%); 
     }
-    50%{
+    50% {
        opacity: 0.3; 
     }
-    100% { 
+    100% {
         opacity: 1; 
         transform: translateX(0); 
     }
-} */
-
-/* .fadeInLeft{ 
-    opacity: 0; 
-    -webkit-transform: translateX(-400px); 
-    transform: translateX(-400px);
-} */
+}

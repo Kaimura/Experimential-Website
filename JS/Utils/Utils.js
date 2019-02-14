@@ -4,7 +4,7 @@ function isIntersecting(elementToSpot) {
     let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.05
+        threshold: 0
       };
       
       let callback = function(entries, observer) { 
