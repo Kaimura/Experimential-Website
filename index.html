@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="CSS/main.css">
     </head>
     <body>
+
+        <!-- ************* navbar section **************** -->
         <nav>
             <ul class="flex flex-space-evenly">
                 <li><a class="active" href="#home">Home</a></li>
@@ -22,6 +24,11 @@
         <div class="space"></div>
         <div class="space"></div>
 
+
+        <div class="divider"></div>
+        <br><br>
+
+        <!-- ***************** about us section *****************-->
         <div id="myDiv">
             <div id="aboutImage">
                 <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/team1-min-e1549997257528.jpg" alt="Team Blackhound">
@@ -37,22 +44,92 @@
             </div>
         </div>
 
+        <div class="divider"></div>
+        <br><br>
+        <!-- *************** service section ************* -->
         <div>
             <h1>Unsere Services</h1>
         </div>
 
-        <div id="rotationService">
-            <div id="consultingFront">
-                <img class="rotateImg"src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_Concept_content_1501927.svg" alt="">
-            </div>
-            <div id="consultingBack">
-                <article>
-                    <h2>Consulting & Projekt Management</h2>
-                    <p>Angefangen mit der Konzeption und Planung bis hin zur Beratung. Darüber hinaus stehen wir Ihnen im Verlauf des Projekts jederzeit zur Verfügung!</p>
-                </article>
+        <div class="flip-scene">
+            <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_Concept_content_1501927.svg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back flex flex-center-center">
+                    <div>
+                        <h2>Projekt Management & Consulting</h2> 
+                        <p>Angefangen mit der Konzeption und Planung bis hin zur Beratung. Darüber hinaus stehen wir Ihnen im Verlauf des Projekts jederzeit zur Verfügung!</p> 
+                    </div>
+                </div>
             </div>
         </div>
 
+        <div class="flip-scene">
+            <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_164_2661004.svg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back flex flex-center-center">
+                    <div>
+                        <h2>Virtual & Augmented Reality, Sowie 3D Game Design</h2>                     
+                        <p>Wir werfen stets einen Blick in die Zukunft. Deshalb fördern wir auch innovative Piloten Projekte.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-scene">
+            <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_Web_Developmen_1562687.svg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back flex flex-center-center">
+                    <div>
+                        <h2>Web- Entwicklung und Design</h2> 
+                        <p>Mit neuster Technologie gelingt es uns, die Wünsche unserer Kunden gänzlich zu erfüllen. Dementsprechend kennen wir da keine Grenzen!</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-scene">
+            <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_874-22_3332601.svg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back flex flex-center-center">
+                    <div>
+                        <h2>Content Management</h2> 
+                        <p>Die Pflege von bereits bestehenden Inhalten aber auch neue Projekte werden bereits mit unserem Team geplant, umgesetzt und schließlich abgeschlossen.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <br><br>
+
+        <!-- ************* client section **************-->
+        <div class="grid3x3">
+            <div class="client-thumbnail">
+                <a href="https://www.ikea.com/de/de/">
+                    <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/Ikea-1024x535.jpg" alt="">
+                </a>
+            </div>
+            <div class="client-thumbnail"></div>
+            <div class="client-thumbnail"></div>
+            <div class="client-thumbnail"></div>
+            <div class="client-thumbnail"></div>
+            <div class="client-thumbnail"></div>
+            <div class="client-thumbnail"></div>
+            <div class="client-thumbnail"></div>
+            <div class="client-thumbnail"></div>
+        </div>
 
         <script src="JS/main.js"></script>
     </body>
