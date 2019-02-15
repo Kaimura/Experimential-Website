@@ -228,6 +228,9 @@ article {
         width: 100%;
     }
     #aboutImage {
+        display: flex;
+        justify-content: center;
+        height: 400px;
         width: 50%;
     }
     #aboutUs {
