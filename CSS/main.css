@@ -1,9 +1,6 @@
 html {
-    margin: 8px;
-}
-
-body{
     scroll-behavior: smooth;
+    margin: 8px;
 }
 
 .flex {
@@ -143,9 +140,9 @@ article {
     }
   }
 
-  /* .client-thumbnail:nth-child(1){
+  .client-thumbnail:nth-child(1){
         background-image: url(http://blackhoundagency.de/wp-content/uploads/2019/02/Ikea-1024x535.jpg);
-  } */
+  }
   .client-thumbnail:nth-child(2){
         background-image: url(http://blackhoundagency.de/wp-content/uploads/2019/02/Hugo_Boss.jpg);
   }
@@ -179,7 +176,7 @@ article {
         background-position: center;
         height:100%;
         background-color: #c2c2c2;
-        display: inline-block;
+        /* display: inline-block; */
         vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
@@ -188,7 +185,7 @@ article {
   }
 
   .client-thumbnail:before {
-        /* content: ''; */
+        content: '';
         position: absolute;
         border: #e1e1e1 solid 6px;
         top: 0;
@@ -245,6 +242,10 @@ article {
         width: 25%;
     }
 
+    #Clients {
+        padding-top: 9em;
+    }
+
     .grid3x3 {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -252,7 +253,7 @@ article {
         height: 75vw;
         width: 100vmin;
         margin: 0 auto;
-        padding-top: 100px;
+        /* padding-top: 100px; */
     }
 
     .client-thumbnail img {
