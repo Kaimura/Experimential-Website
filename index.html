@@ -8,129 +8,149 @@
 
         <script src="JS/Utils/Utils.js"></script>
         <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" media="only screen and (min-width: 768px)" href="CSS/desktop.css">
     </head>
     <body>
 
-        <!-- ************* navbar section **************** -->
-        <nav>
-            <ul class="flex flex-space-evenly">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Service">Service</a></li>
-                <li><a href="#Clients">Klienten</a></li>
-            </ul>
-        </nav>
+        <div id="container">
+            <!-- ************* navbar section **************** -->
+            
+            <nav class="wrap">
+                <ul class="flex flex-space-evenly">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Clients">Klienten</a></li>
+                </ul>
+            </nav>
 
-        <div class="space"></div>
-        <div class="space"></div>
-
-
-        <div class="divider"></div>
-        <br><br>
-
-        <div>
-            <h1 id="About">Über Uns</h1>
-        </div>
-        <!-- ***************** about us section *****************-->
-        <div id="myDiv">
-            <div id="aboutImage">
-                <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/team1-min-e1549997257528.jpg" alt="Team Blackhound">
+            <!-- ************ landing page banner *************** -->
+            <div id="bannerDiv">
+                <img src ="https://via.placeholder.com/1200x850"></img>
+                <h1>Welcome to blackhound Studios!</h1>
+                <h3>Your digital agency</h3>
             </div>
+            <!-- <div class="space"></div> -->
 
-            <div id="aboutUs">
-                <h2>Über Uns</h2>
-                <article>
-                    <p>blackHound ist eine frankfurter Digitalagentur und konzipiert, entwickelt und begleitet Projekte von Kunden im Digitalsektor. Seit 2016 unterstützt die Agentur  mit ihrer flexiblen, modernen und professionellen Vorgehensweise Kunden aus den verschiedensten Branchen.
-                        <p>Alexander Johannes und Eyüb Zengin gründeten 2016 blackHound in Frankfurt am Main. Dabei setzten sie einen Schwerpunkt auf technologisch Innovative Projekte im Bereich Virtual Reality & Argumented Reality. Somit fasste die Digitalagentur 2016 schnell Fuß auf dem Markt. Mittlerweile legt blackHound den Schwerpunkt auf digitale Dienstleistungen, die nicht nur messbare Auswirkungen haben, sondern auch  nachhaltig und lukrativ für ihre Kunden sind. Dementsprechend betrachten Klienten das Team von blackHound gerne als einen verlängerten Arm Ihres Unternehmens.</p>
-                    </p>
-                </article>
-            </div>
-        </div>
+            <div class="divider"></div>
 
-        <div class="divider"></div>
-        <br><br>
-        <!-- *************** service section ************* -->
-        <div>
-            <h1 id="Service">Unsere Services</h1>
-        </div>
-
-        <div class="flip-scene">
-            <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
-            <div class="flip-card">
-                <div class="flip-card-front">
-                    <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_Concept_content_1501927.svg" alt="Avatar" style="width:300px;height:300px;">
+            <div class="wrap">
+                <div>
+                    <h1 id="About">Über Uns</h1>
                 </div>
-                <div class="flip-card-back flex flex-center-center">
-                    <div>
-                        <h2>Projekt Management & Consulting</h2> 
-                        <p>Angefangen mit der Konzeption und Planung bis hin zur Beratung. Darüber hinaus stehen wir Ihnen im Verlauf des Projekts jederzeit zur Verfügung!</p> 
+                <!-- ***************** about us section *****************-->
+                <div id="myDiv">
+                    <div id="aboutImage">
+                        <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/team1-min-e1549997257528.jpg" alt="Team Blackhound">
+                    </div>
+
+                    <div id="aboutUs">
+                        <h2>Über Uns</h2>
+                        <article>
+                            <p>blackHound ist eine frankfurter Digitalagentur und konzipiert, entwickelt und begleitet Projekte von Kunden im Digitalsektor. Seit 2016 unterstützt die Agentur  mit ihrer flexiblen, modernen und professionellen Vorgehensweise Kunden aus den verschiedensten Branchen.
+                                <p>Alexander Johannes und Eyüb Zengin gründeten 2016 blackHound in Frankfurt am Main. Dabei setzten sie einen Schwerpunkt auf technologisch Innovative Projekte im Bereich Virtual Reality & Argumented Reality. Somit fasste die Digitalagentur 2016 schnell Fuß auf dem Markt. Mittlerweile legt blackHound den Schwerpunkt auf digitale Dienstleistungen, die nicht nur messbare Auswirkungen haben, sondern auch  nachhaltig und lukrativ für ihre Kunden sind. Dementsprechend betrachten Klienten das Team von blackHound gerne als einen verlängerten Arm Ihres Unternehmens.</p>
+                            </p>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="flip-scene">
-            <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
-            <div class="flip-card">
-                <div class="flip-card-front">
-                    <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_164_2661004.svg" alt="Avatar" style="width:300px;height:300px;">
+            <div class="divider"></div>
+
+            <!-- *************** service section ************* -->
+            <div class="wrap">
+                <div>
+                    <h1 id="Service">Unsere Services</h1>
                 </div>
-                <div class="flip-card-back flex flex-center-center">
-                    <div>
-                        <h2>Virtual & Augmented Reality, Sowie 3D Game Design</h2>                     
-                        <p>Wir werfen stets einen Blick in die Zukunft. Deshalb fördern wir auch innovative Piloten Projekte.</p> 
+
+
+                <div class="flip-scene">
+                    <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                            <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_Concept_content_1501927.svg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back flex flex-center-center">
+                            <div>
+                                <h2>Projekt Management & Consulting</h2> 
+                                <p>Angefangen mit der Konzeption und Planung bis hin zur Beratung. Darüber hinaus stehen wir Ihnen im Verlauf des Projekts jederzeit zur Verfügung!</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-scene">
+                    <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                            <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_164_2661004.svg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back flex flex-center-center">
+                            <div>
+                                <h2>Virtual & Augmented Reality, Sowie 3D Game Design</h2>                     
+                                <p>Wir werfen stets einen Blick in die Zukunft. Deshalb fördern wir auch innovative Piloten Projekte.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-scene">
+                    <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                            <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_Web_Developmen_1562687.svg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back flex flex-center-center">
+                            <div>
+                                <h2>Web- Entwicklung und Design</h2> 
+                                <p>Mit neuster Technologie gelingt es uns, die Wünsche unserer Kunden gänzlich zu erfüllen. Dementsprechend kennen wir da keine Grenzen!</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-scene">
+                    <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                            <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_874-22_3332601.svg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back flex flex-center-center">
+                            <div>
+                                <h2>Content Management</h2> 
+                                <p>Die Pflege von bereits bestehenden Inhalten aber auch neue Projekte werden bereits mit unserem Team geplant, umgesetzt und schließlich abgeschlossen.</p> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="flip-scene">
-            <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
-            <div class="flip-card">
-                <div class="flip-card-front">
-                    <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_Web_Developmen_1562687.svg" alt="Avatar" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back flex flex-center-center">
-                    <div>
-                        <h2>Web- Entwicklung und Design</h2> 
-                        <p>Mit neuster Technologie gelingt es uns, die Wünsche unserer Kunden gänzlich zu erfüllen. Dementsprechend kennen wir da keine Grenzen!</p> 
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="divider"></div>
 
-        <div class="flip-scene">
-            <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
-            <div class="flip-card">
-                <div class="flip-card-front">
-                    <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_874-22_3332601.svg" alt="Avatar" style="width:300px;height:300px;">
+            <div class="wrap">
+                <div>
+                    <h1 id="Clients">Unsere Klienten</h1>
                 </div>
-                <div class="flip-card-back flex flex-center-center">
-                    <div>
-                        <h2>Content Management</h2> 
-                        <p>Die Pflege von bereits bestehenden Inhalten aber auch neue Projekte werden bereits mit unserem Team geplant, umgesetzt und schließlich abgeschlossen.</p> 
-                    </div>
+
+                <!-- ************* client section **************-->
+                <div class="grid3x3">
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
                 </div>
             </div>
-        </div>
 
-        <div class="divider"></div>
-        <br><br>
 
-        <div>
-            <h1 id="Clients">Unsere Klienten</h1>
-        </div>
-        <!-- ************* client section **************-->
-        <div class="grid3x3">
-            <div class="client-thumbnail"></div>
-            <div class="client-thumbnail"></div>
-            <div class="client-thumbnail"></div>
-            <div class="client-thumbnail"></div>
-            <div class="client-thumbnail"></div>
-            <div class="client-thumbnail"></div>
-            <div class="client-thumbnail"></div>
-            <div class="client-thumbnail"></div>
-            <div class="client-thumbnail"></div>
+            <footer>
+                <p>Copyright by Daniel Kerata</p>
+            </footer>
+
         </div>
 
         <script src="JS/main.js"></script>

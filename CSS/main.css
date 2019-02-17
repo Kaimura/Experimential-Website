@@ -1,6 +1,43 @@
 html {
     scroll-behavior: smooth;
-    margin: 8px;
+    margin: 0px 8px;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#bannerDiv {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+}
+
+#bannerDiv img {
+    max-width: 100%;
+    /* to prevent mobile viewport to glitch */
+}
+
+#bannerDiv h1, #bannerDiv h3 {
+    position:absolute;
+}
+
+#bannerDiv h1 {
+    top: 34%;
+}
+
+#bannerDiv h3 {
+    top: 60%;
+}
+
+.wrap {
+    overflow: hidden;
+    /* fixes problem of div not wrapping around float:left elements in services section */
+    margin-bottom: 1em;
 }
 
 .flex {
@@ -120,6 +157,13 @@ article {
     /* margin: 0 auto; */
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: dimgray;
+    color: aliceblue;
+}
+
 /* Ripple Out */
 @-webkit-keyframes hvr-ripple-out {
     100% {
@@ -220,46 +264,3 @@ article {
         transform: rotateY(90deg); 
     }
 } */
-
-
-@media only screen and (min-width: 768px) {
-    #myDiv {
-        display: flex;
-        width: 100%;
-    }
-    #aboutImage {
-        display: flex;
-        justify-content: center;
-        height: 400px;
-        width: 50%;
-    }
-    #aboutUs {
-        width: 50%;
-    }
-    #aboutImage img {
-        width: 500px;
-    }
-
-    .flip-scene {
-        float: left;
-        width: 25%;
-    }
-
-    #Clients {
-        padding-top: 9em;
-    }
-
-    .grid3x3 {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        align-items: center;
-        height: 75vw;
-        width: 100vmin;
-        margin: 0 auto;
-        /* padding-top: 100px; */
-    }
-
-    .client-thumbnail img {
-        width: 100%;
-    }
-}

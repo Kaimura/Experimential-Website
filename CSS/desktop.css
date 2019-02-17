@@ -1,0 +1,38 @@
+
+@media only screen and (min-width: 768px) {
+    #myDiv {
+        display: flex;
+        width: 100%;
+    }
+    #aboutImage {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        width: 50%;
+    }
+    #aboutUs {
+        width: 50%;
+    }
+    #aboutImage img {
+        width: 500px;
+    }
+
+    .flip-scene {
+        float: left;
+        width: 25%;
+    }
+
+    .grid3x3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        height: 75vw;
+        width: 100vmin;
+        margin: 0 auto;
+        /* padding-top: 100px; */
+    }
+
+    .client-thumbnail img {
+        width: 100%;
+    }
+}
