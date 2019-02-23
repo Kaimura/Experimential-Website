@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <title>Responsive Website</title>
 
         <script src="JS/Utils/Utils.js"></script>
         <link rel="stylesheet" href="CSS/main.css">
@@ -13,9 +13,9 @@
     <body>
 
         <div id="container">
+
             <!-- ************* navbar section **************** -->
-            
-            <nav class="wrap">
+            <nav>
                 <ul class="flex flex-space-evenly">
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="#About">About</a></li>
@@ -24,13 +24,18 @@
                 </ul>
             </nav>
 
+            <!-- <div class="space"></div> -->
+
             <!-- ************ landing page banner *************** -->
             <div id="bannerDiv">
-                <img src ="https://via.placeholder.com/1200x850"></img>
-                <h1>Welcome to blackhound Studios!</h1>
-                <h3>Your digital agency</h3>
+                <img src ="https://via.placeholder.com/850x450" srcset="https://via.placeholder.com/450x250 500w,
+                                                                        https://via.placeholder.com/850x450 1000w,
+                                                                        https://via.placeholder.com/1200x650 1500w" alt="Banner Image">
+                <div class="imageText-center">                                       
+                    <h1>Welcome to blackhound Studios!</h1>
+                    <h3>Your digital agency</h3>
+                </div>
             </div>
-            <!-- <div class="space"></div> -->
 
             <div class="divider"></div>
 
@@ -38,10 +43,15 @@
                 <div>
                     <h1 id="About">Über Uns</h1>
                 </div>
+
+
                 <!-- ***************** about us section *****************-->
                 <div id="myDiv">
                     <div id="aboutImage">
-                        <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/team1-min-e1549997257528.jpg" alt="Team Blackhound">
+                        <img src ="https://via.placeholder.com/850x450" srcset="https://via.placeholder.com/450x450 500w,
+                                                                                https://via.placeholder.com/850x850 1000w,
+                                                                                https://via.placeholder.com/1200x1200 1500w" alt ="Team Blackhound"
+                                                                        sizes="(min-width: 768px) 50vw, 100vw">
                     </div>
 
                     <div id="aboutUs">
@@ -57,18 +67,19 @@
 
             <div class="divider"></div>
 
+
             <!-- *************** service section ************* -->
             <div class="wrap">
                 <div>
                     <h1 id="Service">Unsere Services</h1>
                 </div>
 
-
                 <div class="flip-scene">
                     <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_Concept_content_1501927.svg" alt="Avatar" style="width:300px;height:300px;">
+                            <img src="https://via.placeholder.com/150x250" srcset="https://via.placeholder.com/250x450 500w,
+                                                                                    https://via.placeholder.com/150x250 1000w" alt="Avatar">
                         </div>
                         <div class="flip-card-back flex flex-center-center">
                             <div>
@@ -83,7 +94,8 @@
                     <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_164_2661004.svg" alt="Avatar" style="width:300px;height:300px;">
+                            <img src="https://via.placeholder.com/150x250" srcset="https://via.placeholder.com/250x450 500w,
+                                                                                    https://via.placeholder.com/150x250 1000w" alt="Avatar">
                         </div>
                         <div class="flip-card-back flex flex-center-center">
                             <div>
@@ -98,7 +110,8 @@
                     <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_Web_Developmen_1562687.svg" alt="Avatar" style="width:300px;height:300px;">
+                            <img src="https://via.placeholder.com/150x250" srcset="https://via.placeholder.com/250x450 500w,
+                                                                                    https://via.placeholder.com/150x250 1000w" alt="Avatar">
                         </div>
                         <div class="flip-card-back flex flex-center-center">
                             <div>
@@ -113,7 +126,8 @@
                     <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="http://blackhoundagency.de/wp-content/uploads/2019/02/iconfinder_874-22_3332601.svg" alt="Avatar" style="width:300px;height:300px;">
+                            <img src="https://via.placeholder.com/150x250" srcset="https://via.placeholder.com/250x450 500w,
+                                                                                    https://via.placeholder.com/150x250 1000w" alt="Avatar">
                         </div>
                         <div class="flip-card-back flex flex-center-center">
                             <div>
@@ -131,6 +145,7 @@
                 <div>
                     <h1 id="Clients">Unsere Klienten</h1>
                 </div>
+
 
                 <!-- ************* client section **************-->
                 <div class="grid3x3">
