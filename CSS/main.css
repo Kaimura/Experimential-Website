@@ -55,6 +55,7 @@ ul {
     width: 100%;
     max-width: 100%;
     /* to prevent mobile viewport to glitch */
+    height: 95vh;
 }
 
 .imageText-center {
@@ -83,7 +84,7 @@ ul {
     align-items: center;
     justify-content: center;
 }
-.flex-space-evenly{
+.flex-space-evenly {
     justify-content: space-evenly;
 }
 
@@ -173,6 +174,66 @@ article {
 
 }
 
+.client-thumbnail:nth-child(1){
+    background-image: url(http://blackhoundagency.de/wp-content/uploads/2019/02/Ikea-1024x535.jpg);
+}
+.client-thumbnail:nth-child(2){
+    background-image: url(http://blackhoundagency.de/wp-content/uploads/2019/02/Hugo_Boss.jpg);
+}
+.client-thumbnail:nth-child(3){
+    background-image: url(https://via.placeholder.com/350x250);
+}
+.client-thumbnail:nth-child(4){
+    background-image: url(https://via.placeholder.com/350x250);
+}
+.client-thumbnail:nth-child(5){
+    background-image: url(https://via.placeholder.com/350x250);
+}
+.client-thumbnail:nth-child(6){
+    background-image: url(https://via.placeholder.com/350x250);
+}
+.client-thumbnail:nth-child(7){
+    background-image: url(https://via.placeholder.com/350x250);
+}
+.client-thumbnail:nth-child(8){
+    background-image: url(https://via.placeholder.com/350x250);
+}
+.client-thumbnail:nth-child(9){
+    background-image: url(https://via.placeholder.com/350x250);
+}
+
+.client-thumbnail {
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100%;
+    background-color: #c2c2c2;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.client-thumbnail:before {
+    content: '';
+    position: absolute;
+    border: #e1e1e1 solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.client-thumbnail:hover:before, .client-thumbnail:focus:before, .client-thumbnail:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+}
+
 
 /*** footer ***/
 
@@ -192,8 +253,9 @@ footer {
         left: -12px;
         opacity: 0;
     }
-  }
-  @keyframes hvr-ripple-out {
+}
+
+@keyframes hvr-ripple-out {
     100% {
         top: -12px;
         right: -12px;
@@ -201,67 +263,21 @@ footer {
         left: -12px;
         opacity: 0;
     }
-  }
+}
 
-  .client-thumbnail:nth-child(1){
-        background-image: url(http://blackhoundagency.de/wp-content/uploads/2019/02/Ikea-1024x535.jpg);
-  }
-  .client-thumbnail:nth-child(2){
-        background-image: url(http://blackhoundagency.de/wp-content/uploads/2019/02/Hugo_Boss.jpg);
-  }
-  .client-thumbnail:nth-child(3){
-        background-image: url(https://via.placeholder.com/350x250);
-  }
-  .client-thumbnail:nth-child(4){
-        background-image: url(https://via.placeholder.com/350x250);
-  }
-  .client-thumbnail:nth-child(5){
-        background-image: url(https://via.placeholder.com/350x250);
-  }
-  .client-thumbnail:nth-child(6){
-        background-image: url(https://via.placeholder.com/350x250);
-  }
-  .client-thumbnail:nth-child(7){
-        background-image: url(https://via.placeholder.com/350x250);
-  }
-  .client-thumbnail:nth-child(8){
-        background-image: url(https://via.placeholder.com/350x250);
-  }
-  .client-thumbnail:nth-child(9){
-        background-image: url(https://via.placeholder.com/350x250);
-  }
-
-  .client-thumbnail {
-        display: flex;
-        align-items: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height:100%;
-        background-color: #c2c2c2;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        position: relative;
-  }
-
-  .client-thumbnail:before {
-        content: '';
-        position: absolute;
-        border: #e1e1e1 solid 6px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-  }
-
-  .client-thumbnail:hover:before, .client-thumbnail:focus:before, .client-thumbnail:active:before {
-        -webkit-animation-name: hvr-ripple-out;
-        animation-name: hvr-ripple-out;
-  }
+@-webkit-keyframes fadeInLeft {
+    0% { 
+        opacity: 0; 
+        transform: translateX(-300%); 
+    }
+    50% {
+       opacity: 0.3; 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
 
 @keyframes fadeInLeft {
     0% { 
