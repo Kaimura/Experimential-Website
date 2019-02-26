@@ -1,0 +1,37 @@
+
+@media only screen and (min-width: 768px) {
+    #myDiv {
+        display: flex;
+        width: 100%;
+    }
+    /* #aboutImage {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        width: 50%;
+    } */
+    #aboutUs {
+        width: 60%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .flip-scene {
+        float: left;
+        width: 25%;
+        /* width: calc(25vw - 4px); */
+    }
+
+    .grid3x3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    .client-thumbnail img {
+        width: 100%;
+    }
+}

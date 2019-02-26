@@ -1,27 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Responsive Website</title>
 
-    <script src="JS/Utils/Utils.js"></script>
-    <link rel="stylesheet" href="CSS/main.css">
-</head>
-<body>
-    <div class="space"></div>
-    <div class="space"></div>
-    <div class="space"></div>
-    <div class="space"></div>
+        <script src="JS/Utils/Utils.js"></script>
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" media="only screen and (min-width: 768px)" href="CSS/desktop.css">
+    </head>
+    <body>
 
-    <div class="flex-center">
-        <div id="myDiv">
+        <div id="container">
+
+            <!-- ************* navbar section **************** -->
+            <nav>
+                <ul class="flex flex-space-evenly">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Clients">Klienten</a></li>
+                </ul>
+            </nav>
+
+            <!-- <div class="space"></div> -->
+
+            <!-- ************ landing page banner *************** -->
+            <div id="bannerDiv">
+                <img src ="https://via.placeholder.com/850x450" srcset="https://via.placeholder.com/450x250 500w,
+                                                                        https://via.placeholder.com/850x450 1000w,
+                                                                        https://via.placeholder.com/1200x650 1500w" alt="Banner Image">
+                <div class="imageText-center">                                    
+                    <h1>Welcome to blackhound Studios!</h1>
+                    <h3>Your digital agency</h3>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="wrap">
+                <div>
+                    <h1 id="About">Über Uns</h1>
+                </div>
+
+
+                <!-- ***************** about us section *****************-->
+                <div id="myDiv">
+                    <div id="aboutImage">
+                        <img src ="https://via.placeholder.com/850x450" srcset="https://via.placeholder.com/450x450 500w,
+                                                                                https://via.placeholder.com/850x850 1000w,
+                                                                                https://via.placeholder.com/1200x1200 1500w" alt ="Team Blackhound"
+                                                                        sizes="(min-width: 768px) 50vw, 100vw">
+                    </div>
+
+                    <div id="aboutUs">
+                        <h2>Über Uns</h2>
+                        <article>
+                            <p>blackHound ist eine frankfurter Digitalagentur und konzipiert, entwickelt und begleitet Projekte von Kunden im Digitalsektor. Seit 2016 unterstützt die Agentur  mit ihrer flexiblen, modernen und professionellen Vorgehensweise Kunden aus den verschiedensten Branchen.
+                                <p>Alexander Johannes und Eyüb Zengin gründeten 2016 blackHound in Frankfurt am Main. Dabei setzten sie einen Schwerpunkt auf technologisch Innovative Projekte im Bereich Virtual Reality & Argumented Reality. Somit fasste die Digitalagentur 2016 schnell Fuß auf dem Markt. Mittlerweile legt blackHound den Schwerpunkt auf digitale Dienstleistungen, die nicht nur messbare Auswirkungen haben, sondern auch  nachhaltig und lukrativ für ihre Kunden sind. Dementsprechend betrachten Klienten das Team von blackHound gerne als einen verlängerten Arm Ihres Unternehmens.</p>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+
+            <!-- *************** service section ************* -->
+            <div class="wrap">
+                <div>
+                    <h1 id="Service">Unsere Services</h1>
+                </div>
+
+                <div class="flip-scene">
+                    <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                            <img src="https://via.placeholder.com/150x250" srcset="https://via.placeholder.com/250x450 500w,
+                                                                                    https://via.placeholder.com/150x250 1000w" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back flex flex-center-center">
+                            <div>
+                                <h2>Projekt Management & Consulting</h2> 
+                                <p>Angefangen mit der Konzeption und Planung bis hin zur Beratung. Darüber hinaus stehen wir Ihnen im Verlauf des Projekts jederzeit zur Verfügung!</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-scene">
+                    <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                                <img src="https://via.placeholder.com/150x250" srcset="https://via.placeholder.com/250x450 500w,
+                                                                                        https://via.placeholder.com/150x250 1000w" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back flex flex-center-center">
+                            <div>
+                                <h2>Virtual & Augmented Reality, Sowie 3D Game Design</h2>                     
+                                <p>Wir werfen stets einen Blick in die Zukunft. Deshalb fördern wir auch innovative Piloten Projekte.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-scene">
+                    <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                                <img src="https://via.placeholder.com/150x250" srcset="https://via.placeholder.com/250x450 500w,
+                                                                                        https://via.placeholder.com/150x250 1000w" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back flex flex-center-center">
+                            <div>
+                                <h2>Web- Entwicklung und Design</h2> 
+                                <p>Mit neuster Technologie gelingt es uns, die Wünsche unserer Kunden gänzlich zu erfüllen. Dementsprechend kennen wir da keine Grenzen!</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-scene">
+                    <!-- flip-scene necessary to avoid bug when mouse is not exactly over thumbnail -->
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                                <img src="https://via.placeholder.com/150x250" srcset="https://via.placeholder.com/250x450 500w,
+                                                                                        https://via.placeholder.com/150x250 1000w" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back flex flex-center-center">
+                            <div>
+                                <h2>Content Management</h2> 
+                                <p>Die Pflege von bereits bestehenden Inhalten aber auch neue Projekte werden bereits mit unserem Team geplant, umgesetzt und schließlich abgeschlossen.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="wrap">
+                <div>
+                    <h1 id="Clients">Unsere Klienten</h1>
+                </div>
+
+
+                <!-- ************* client section **************-->
+                <div class="grid3x3">
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                    <div class="client-thumbnail"></div>
+                </div>
+            </div>
+
+
+            <footer>
+                <p>Copyright by Daniel Kerata</p>
+            </footer>
 
         </div>
-    </div>
 
-
-    <script src="JS/main.js"></script>
-</body>
+        <script src="JS/main.js"></script>
+    </body>
 </html>
