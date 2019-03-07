@@ -27,30 +27,27 @@ ul {
     padding: 0;
     overflow: hidden;
     height: inherit;
+    align-items: center;
   }
   
-  li {
+  /* li {
     float: left;
-  }
+  } */
   
   li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
   }
 
   .active {
-      background-color: black;
+    color: black;
+    font-weight: bold;
   }
 
-/* banner section */
 
+/* banner section */
 #Home {
         position: relative;
         display: flex;
