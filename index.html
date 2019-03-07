@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniel Kerata">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Responsive Website</title>
 
-        <script src="JS/Utils/Utils.js"></script>
         <link rel="stylesheet" href="CSS/main.css">
         <link rel="stylesheet" media="only screen and (min-width: 768px)" href="CSS/desktop.css">
     </head>
@@ -17,36 +17,35 @@
             <!-- ************* navbar section **************** -->
             <nav>
                 <ul class="flex flex-space-evenly">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Service">Service</a></li>
-                    <li><a href="#Clients">Klienten</a></li>
+                    <li><a name="Home" href="#">Home</a></li>
+                    <li><a name="About" href="#About">Über Uns</a></li>
+                    <li><a name="Service" href="#Service">Service</a></li>
+                    <li><a name="Clients" href="#Clients">Klienten</a></li>
                 </ul>
             </nav>
 
             <!-- <div class="space"></div> -->
 
             <!-- ************ landing page banner *************** -->
-            <div id="bannerDiv">
+            <div name="section" id="Home">
                 <img src ="https://via.placeholder.com/850x450" srcset="https://via.placeholder.com/450x250 500w,
                                                                         https://via.placeholder.com/850x450 1000w,
                                                                         https://via.placeholder.com/1200x650 1500w" alt="Banner Image">
                 <div class="imageText-center">                                    
-                    <h1>Welcome to blackhound Studios!</h1>
-                    <h3>Your digital agency</h3>
+                    <h1>Willkommen bei blackhound Studios!</h1>
+                    <h3>Deine digitale Agentur</h3>
                 </div>
             </div>
 
             <div class="divider"></div>
 
+
+            <!-- ***************** about us section *****************-->
             <div class="wrap">
                 <div>
-                    <h1 id="About">Über Uns</h1>
+                    <h1 name="section" id="About">Über Uns</h1>
                 </div>
-
-
-                <!-- ***************** about us section *****************-->
-                <div id="myDiv">
+                <div id="myDiv" class="slideInLeft">
                     <div id="aboutImage">
                         <img src ="https://via.placeholder.com/850x450" srcset="https://via.placeholder.com/450x450 500w,
                                                                                 https://via.placeholder.com/850x850 1000w,
@@ -71,7 +70,7 @@
             <!-- *************** service section ************* -->
             <div class="wrap">
                 <div>
-                    <h1 id="Service">Unsere Services</h1>
+                    <h1 name="section" id="Service">Unsere Services</h1>
                 </div>
 
                 <div class="flip-scene">
@@ -143,7 +142,7 @@
 
             <div class="wrap">
                 <div>
-                    <h1 id="Clients">Unsere Klienten</h1>
+                    <h1 name="section" id="Clients">Unsere Klienten</h1>
                 </div>
 
 

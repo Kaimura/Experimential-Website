@@ -12,6 +12,11 @@ html {
 /*** navbar ***/
 
 nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+
     height: 5vh;
     background-image: linear-gradient(to bottom right, red, #565649);
 }
@@ -40,10 +45,13 @@ ul {
     background-color: #111;
   }
 
+  .active {
+      background-color: black;
+  }
 
 /* banner section */
 
-#bannerDiv {
+#Home {
         position: relative;
         display: flex;
         justify-content: center;
@@ -51,11 +59,11 @@ ul {
         max-width: 100%;
 }
 
-#bannerDiv img {
+#Home img {
     width: 100%;
     max-width: 100%;
     /* to prevent mobile viewport to glitch */
-    height: 95vh;
+    height: 100vh;
 }
 
 .imageText-center {
@@ -119,7 +127,7 @@ article {
     padding: 0.5em;
 }
 
-.visited {
+.slideInLeft {
     animation: fadeInLeft 2s ease-in 1 normal 0s;
     /* transform: translateX(200px); */
 }
